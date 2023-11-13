@@ -1,0 +1,14 @@
+C:\Users\XPS 13\Desktop\SEproject\SeProject\bin\Debug\SeProject.exe.config
+C:\Users\XPS 13\Desktop\SEproject\SeProject\bin\Debug\SeProject.exe
+C:\Users\XPS 13\Desktop\SEproject\SeProject\bin\Debug\SeProject.pdb
+C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.csproj.AssemblyReference.cache
+C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.Form1.resources
+C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.Form2.resources
+C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.Properties.Resources.resources
+C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.csproj.GenerateResource.cache
+C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.csproj.CoreCompileInputs.cache
+C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.exe
+C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.pdb
+C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.Form3.resources
+C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.Form4.resources
+C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.Form5.resources
