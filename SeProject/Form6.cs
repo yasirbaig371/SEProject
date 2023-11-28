@@ -36,14 +36,14 @@ namespace SeProject
             MessageBox.Show("Add Successfully", "Information Message",
             MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Hide();
-            Form4 f1 = new Form4();
+            AdminForm f1 = new AdminForm();
             f1.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form4 f1 = new Form4();
+            AdminForm f1 = new AdminForm();
             f1.Show();
         }
     }

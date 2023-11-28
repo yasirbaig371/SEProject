@@ -1,6 +1,6 @@
 ﻿namespace SeProject
 {
-    partial class Form4
+    partial class AdminForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -38,10 +39,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,6 +52,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SlateBlue;
+            this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.button4);
@@ -62,8 +63,23 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(2, 65);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(328, 629);
+            this.panel2.Size = new System.Drawing.Size(263, 629);
             this.panel2.TabIndex = 2;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button5.Location = new System.Drawing.Point(61, 479);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(185, 39);
+            this.button5.TabIndex = 19;
+            this.button5.Text = "Show Depts";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
@@ -100,11 +116,11 @@
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(61, 369);
+            this.button3.Location = new System.Drawing.Point(61, 421);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(185, 39);
             this.button3.TabIndex = 16;
-            this.button3.Text = "Add Dept";
+            this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -116,7 +132,7 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(61, 301);
+            this.button2.Location = new System.Drawing.Point(61, 360);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(185, 39);
             this.button2.TabIndex = 15;
@@ -136,7 +152,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(185, 39);
             this.button1.TabIndex = 14;
-            this.button1.Text = "Show Employee";
+            this.button1.Text = "Show Active";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -164,34 +180,23 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.SlateBlue;
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Location = new System.Drawing.Point(2, -3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(801, 73);
+            this.panel1.Size = new System.Drawing.Size(1195, 73);
             this.panel1.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(769, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 24);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "X";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(236, 27);
+            this.label7.Location = new System.Drawing.Point(432, 26);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(371, 28);
             this.label7.TabIndex = 11;
@@ -200,38 +205,38 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(329, 138);
+            this.dataGridView1.Location = new System.Drawing.Point(271, 76);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(474, 553);
+            this.dataGridView1.Size = new System.Drawing.Size(926, 615);
             this.dataGridView1.TabIndex = 4;
             // 
-            // button5
+            // button6
             // 
-            this.button5.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(61, 434);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(185, 39);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "Show Depts";
-            this.button5.UseVisualStyleBackColor = false;
+            this.button6.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button6.Location = new System.Drawing.Point(61, 298);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(185, 39);
+            this.button6.TabIndex = 20;
+            this.button6.Text = "Show Inactive";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // Form4
+            // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 695);
+            this.ClientSize = new System.Drawing.Size(1193, 695);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form4";
+            this.Name = "AdminForm";
             this.Text = "Form4";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -255,9 +260,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
