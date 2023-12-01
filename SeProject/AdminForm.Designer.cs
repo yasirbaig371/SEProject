@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -41,7 +41,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,7 +52,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.SlateBlue;
             this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button3);
@@ -66,20 +64,21 @@
             this.panel2.Size = new System.Drawing.Size(263, 629);
             this.panel2.TabIndex = 2;
             // 
-            // button5
+            // button6
             // 
-            this.button5.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(61, 479);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(185, 39);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "Show Depts";
-            this.button5.UseVisualStyleBackColor = false;
+            this.button6.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button6.Location = new System.Drawing.Point(61, 298);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(185, 39);
+            this.button6.TabIndex = 20;
+            this.button6.Text = "Show Inactive";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // pictureBox2
             // 
@@ -136,7 +135,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(185, 39);
             this.button2.TabIndex = 15;
-            this.button2.Text = "Add Employee";
+            this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -212,22 +211,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(926, 615);
             this.dataGridView1.TabIndex = 4;
             // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button6.Location = new System.Drawing.Point(61, 298);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(185, 39);
-            this.button6.TabIndex = 20;
-            this.button6.Text = "Show Inactive";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -262,7 +245,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
     }
 }

@@ -33,7 +33,7 @@ namespace SeProject
             cmd.Parameters.AddWithValue("@dob", this.dateTimePicker1.Text);
             cmd.Parameters.AddWithValue("@email", textBox4.Text);
             cmd.Parameters.AddWithValue("@contact", textBox5.Text);
-            cmd.Parameters.AddWithValue("@id", textBox6.Text);
+            cmd.Parameters.AddWithValue("@id", textBox7.Text);
             cmd.ExecuteNonQuery();
             panel2.Visible = false;
             MessageBox.Show("Updated Successfully", "Information Message",
@@ -53,18 +53,22 @@ namespace SeProject
         private void button10_Click(object sender, EventArgs e)
         {
             panel2.Visible = true;
+            Employe E = new Employe();
+            
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("select FullName,Username,Password,Email,Contact, from Person where Id = @id", con);
-            cmd.Parameters.AddWithValue("@id", int.Parse(textBox7.Text));
-            SqlDataReader re = cmd.ExecuteReader();
-            while (re.Read())
+            SqlCommand cmd = new SqlCommand("select FullName,Username,Password,Email,Contact,DateOfBirth from Person where Id = id", con);
+            cmd.Parameters.AddWithValue("@id",textBox7.Text);
+            SqlDataReader re;
+            re = cmd.ExecuteReader();
+            if (re.Read())
             {
 
-                textBox1.Text = re.GetValue(0).ToString();
-                textBox2.Text = re.GetValue(1).ToString();
-                textBox3.Text = re.GetValue(2).ToString();
-                textBox4.Text = re.GetValue(3).ToString();
-                textBox5.Text = re.GetValue(4).ToString();
+                textBox3.Text = re["FullName"].ToString();
+                textBox1.Text = re["Username"].ToString();
+                textBox2.Text = re["Password"].ToString();
+                textBox4.Text = re["Email"].ToString();
+                textBox5.Text = re["Contact"].ToString();
+                dateTimePicker1.Text = re["DateOfBirth"].ToString();
             }
  
         }

@@ -34,7 +34,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -42,8 +41,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -73,7 +70,6 @@
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.button9);
             this.panel3.Controls.Add(this.button10);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.pictureBox4);
@@ -85,7 +81,7 @@
             // textBox7
             // 
             this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox7.Location = new System.Drawing.Point(23, 285);
+            this.textBox7.Location = new System.Drawing.Point(30, 307);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(182, 26);
             this.textBox7.TabIndex = 81;
@@ -106,7 +102,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.Control;
-            this.label13.Location = new System.Drawing.Point(73, 257);
+            this.label13.Location = new System.Drawing.Point(73, 279);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(79, 25);
             this.label13.TabIndex = 80;
@@ -127,22 +123,6 @@
             this.button7.Text = "SignOut";
             this.button7.UseVisualStyleBackColor = false;
             // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Fuchsia;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button9.Location = new System.Drawing.Point(30, 397);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(185, 39);
-            this.button9.TabIndex = 15;
-            this.button9.Text = "Update ";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click_1);
-            // 
             // button10
             // 
             this.button10.BackColor = System.Drawing.Color.DarkSlateBlue;
@@ -151,7 +131,7 @@
             this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Fuchsia;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button10.Location = new System.Drawing.Point(30, 332);
+            this.button10.Location = new System.Drawing.Point(30, 362);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(185, 39);
             this.button10.TabIndex = 14;
@@ -221,8 +201,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.textBox5);
             this.panel2.Controls.Add(this.dateTimePicker1);
@@ -243,25 +221,6 @@
             this.panel2.Size = new System.Drawing.Size(384, 627);
             this.panel2.TabIndex = 23;
             // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox6.Location = new System.Drawing.Point(50, 519);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(156, 26);
-            this.textBox6.TabIndex = 79;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(45, 491);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 25);
-            this.label6.TabIndex = 78;
-            this.label6.Text = "Enter Id";
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.DarkSlateBlue;
@@ -273,11 +232,11 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(118, 564);
+            this.button3.Location = new System.Drawing.Point(108, 523);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(137, 40);
             this.button3.TabIndex = 70;
-            this.button3.Text = "Save";
+            this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -448,7 +407,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -470,8 +428,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label13;

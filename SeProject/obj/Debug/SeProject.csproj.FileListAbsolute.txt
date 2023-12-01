@@ -14,3 +14,4 @@ C:\Users\XPS 13\Desktop\SeProject\SeProject\obj\Debug\SeProject.RegisterForm.res
 C:\Users\XPS 13\Desktop\SeProject\SeProject\obj\Debug\SeProject.AdminForm.resources
 C:\Users\XPS 13\Desktop\SeProject\SeProject\obj\Debug\SeProject.EmployeeInfo.resources
 C:\Users\XPS 13\Desktop\SeProject\SeProject\obj\Debug\SeProject.ManagerForm.resources
+C:\Users\XPS 13\Desktop\SeProject\SeProject\obj\Debug\SeProject.Delete.resources

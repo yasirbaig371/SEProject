@@ -42,13 +42,15 @@ namespace SeProject
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            EmployeeInfo f5 = new EmployeeInfo();
+            EmployeeForm f5 = new EmployeeForm();
             f5.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
+            Delete d = new Delete();
+            d.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

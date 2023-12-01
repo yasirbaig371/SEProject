@@ -72,10 +72,13 @@ namespace SeProject
                 }
                 if (comboBox1.Text == "Employee")
                 {
+                    Employe e1 = new Employe();
                     var con = Configuration.getInstance().getConnection();
                     string query = "select * from Person where Username = @Username AND Password = @Password";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
+                        
+                        e1.name= textBox1.Text;
                         cmd.Parameters.AddWithValue("@Username", textBox1.Text.Trim());
                         cmd.Parameters.AddWithValue("@Password", textBox2.Text.Trim());
                         SqlDataAdapter adapter = new SqlDataAdapter(cmd);
