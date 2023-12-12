@@ -114,9 +114,9 @@
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(342, 93);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(315, 32);
+            this.label5.Size = new System.Drawing.Size(431, 32);
             this.label5.TabIndex = 27;
-            this.label5.Text = "Employee Information";
+            this.label5.Text = "Employee Professional Details";
             // 
             // pictureBox1
             // 
@@ -184,7 +184,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 39);
             this.button1.TabIndex = 18;
-            this.button1.Text = "ADD";
+            this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

@@ -29,10 +29,10 @@ namespace SeProject
         private void button8_Click(object sender, EventArgs e)
         {
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("update Employee set Status = 2 where Id = @id", con);
+            SqlCommand cmd = new SqlCommand("update Employee set Status = 2 where EId = @id", con);
             cmd.Parameters.AddWithValue("@id", int.Parse(textBox3.Text));
             cmd.ExecuteNonQuery();
-            MessageBox.Show("Updated Successfully", "Information Message",
+            MessageBox.Show("Deleted Successfully", "Information Message",
             MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }

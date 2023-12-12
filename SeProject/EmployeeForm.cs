@@ -56,7 +56,7 @@ namespace SeProject
             Employe E = new Employe();
             
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("select FullName,Username,Password,Email,Contact,DateOfBirth from Person where Id = id", con);
+            SqlCommand cmd = new SqlCommand("select FullName,Username,Password,Email,Contact,DateOfBirth from Person where Id = @id", con);
             cmd.Parameters.AddWithValue("@id",textBox7.Text);
             SqlDataReader re;
             re = cmd.ExecuteReader();
@@ -70,7 +70,14 @@ namespace SeProject
                 textBox5.Text = re["Contact"].ToString();
                 dateTimePicker1.Text = re["DateOfBirth"].ToString();
             }
- 
+            re.Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainForm m = new MainForm();
+            m.Show();
         }
     }
 }

@@ -122,6 +122,7 @@
             this.button7.TabIndex = 17;
             this.button7.Text = "SignOut";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button10
             // 
@@ -374,9 +375,9 @@
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(45, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 32);
+            this.label1.Size = new System.Drawing.Size(237, 32);
             this.label1.TabIndex = 59;
-            this.label1.Text = "Register Account";
+            this.label1.Text = "Update Account";
             // 
             // EmployeeForm
             // 

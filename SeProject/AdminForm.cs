@@ -42,7 +42,7 @@ namespace SeProject
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            EmployeeForm f5 = new EmployeeForm();
+            EmployeeInfo f5 = new EmployeeInfo();
             f5.Show();
         }
 
