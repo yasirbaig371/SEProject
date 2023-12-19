@@ -80,8 +80,6 @@ namespace SeProject
                     cmd.Parameters.AddWithValue("@Contact", textBox5.Text);
                     cmd.Parameters.AddWithValue("@Role", role);
                     cmd.ExecuteNonQuery();
-                    SqlCommand cmd1 = new SqlCommand("insert into Employee(Status) values(1)", con);
-                    cmd1.ExecuteNonQuery();
                     MessageBox.Show("Employee Registered Successfully", "Information Message",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

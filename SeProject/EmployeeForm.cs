@@ -79,5 +79,10 @@ namespace SeProject
             MainForm m = new MainForm();
             m.Show();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = checkBox1.Checked ? '\0' : '*';
+        }
     }
 }

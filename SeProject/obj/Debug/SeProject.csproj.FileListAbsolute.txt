@@ -7,7 +7,6 @@ C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.csproj.GenerateR
 C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.csproj.CoreCompileInputs.cache
 C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.exe
 C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.pdb
-C:\Users\XPS 13\Desktop\SEproject\SeProject\obj\Debug\SeProject.Form6.resources
 C:\Users\XPS 13\Desktop\SeProject\SeProject\obj\Debug\SeProject.EmployeeForm.resources
 C:\Users\XPS 13\Desktop\SeProject\SeProject\obj\Debug\SeProject.MainForm.resources
 C:\Users\XPS 13\Desktop\SeProject\SeProject\obj\Debug\SeProject.RegisterForm.resources
